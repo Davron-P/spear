@@ -98,8 +98,6 @@ img { max-width: 100%; display: block; }
 .hero-brand img { width: 100%; height: auto; }
 .hero-purpose { color: var(--navy); font-weight: 700; font-size: 1.2rem; margin-top: 1.8rem; }
 .hero-description { max-width: 49ch; margin-top: 1rem; font-size: 1.125rem; color: var(--text); }
-.photo-credit { padding-block: .5rem; text-align: right; font-size: .75rem; color: var(--muted); }
-.photo-credit a { color: inherit; }
 @media (max-width: 640px) {
   .home-hero { min-height: 470px; }
   .hero-content { padding-block: 3rem; }

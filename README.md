@@ -33,8 +33,8 @@ Application and facilitator pages currently explain that details are unavailable
 - Check desktop and mobile layouts, including narrow screens and keyboard navigation.
 - Keep navy text on the green application background and use readable contrast for small labels.
 
-## Design references and photography
+## Design references
 
-See DESIGN_NOTES.md for the September 2026 reference review and the decisions applied to the site.
+See DESIGN_NOTES.md for the university-club reference review and SPEAR brand decisions.
 
-The homepage uses a remote public-domain photograph of Reynolds Campus Center at Babson College, taken by Daderot on August 1, 2010. It is a campus photograph, not a SPEAR event photograph. Source: https://commons.wikimedia.org/wiki/File:Reynolds_Campus_Center,_Babson_College_-_IMG_0420.JPG. The image depends on Wikimedia availability; retain its attribution when replacing it with a local copy or use an approved current club/campus photo.
+The homepage uses a remote Cutler Center finance lab backdrop. It depends on Babson's image hosting. There is no visible image caption or attribution.

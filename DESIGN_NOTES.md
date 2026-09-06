@@ -16,18 +16,14 @@ Reviewed September 6, 2026. This is a design comparison, not a ranking of financ
 - Preserve separate About, Program, People, and Apply pages; link Placements to the homepage section from every page.
 - Use restrained serif headings, readable system-font body text, white space, thin dividers, navy text, and limited green accents.
 - Replace oversized motivational headlines, decorative arrows, numbered feature cards, the large statistics panel, and repeated promotional banners with straightforward prose, curriculum lists, and a compact program facts table.
-- Use a real Babson campus photograph with a caption and source, rather than generated people or invented event photos.
+- Use a real Babson campus photograph rather than generated people or invented event photos.
 - Retain the nine existing SPEAR firms without inventing counts, sponsorship relationships, or placement rates.
 - Keep unavailable application and facilitator information honest until confirmed details are supplied.
-
-## Photo
-
-Reynolds Campus Center, Babson College. Daderot, August 1, 2010. Public domain as stated by the author on Wikimedia Commons: https://commons.wikimedia.org/wiki/File:Reynolds_Campus_Center,_Babson_College_-_IMG_0420.JPG . Rendered from a 1280-pixel Wikimedia thumbnail; displayed with a crop. A current approved SPEAR group or campus photo would be a stronger long-term replacement.
 
 ## Brand alignment from supplied SPEAR references
 
 The Fall 2024 Session 1 Participant Agenda and Session 3 deck supersede the peer-club typography choices above. The agenda uses Arial/Calibri and the original condensed sans-serif SPEAR wordmark, with navy and muted green. Use the original logo image for the homepage identity and Calibri/Arial for all live text; do not recreate SPEAR in Georgia or another serif.
 
-Reynolds is now a wide, subdued background behind the homepage introduction, with a readable light overlay and a discreet credit below. Placements is omitted from both global navigation menus and remains a homepage section.
+The Cutler Center finance lab is a wide, subdued background behind the homepage introduction, with a readable light overlay and no caption or image attribution. Placements is omitted from both global navigation menus and remains a homepage section.
 
 The program and About pages summarize learning methods and principles from Fall 2024, explicitly labeled with that historical context. Do not infer current facilitators or current application information from the historical documents. The stated 100% internship figure in the deck is a goal, not a verified result. Source documents and participant-level details are not uploaded to the website.
