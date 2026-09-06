@@ -298,3 +298,65 @@ img { max-width: 100%; display: block; }
 @media (max-width: 760px) {
  .program-topics { grid-template-columns: 1fr; gap: 2.5rem; }
 }
+
+/* Program editorial sequence and portrait-led team directory. */
+.program-title-band { background: #e9efea; padding-block: 4rem; border-bottom: 1px solid #cedbcf; }
+.program-title-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 5rem; align-items: end; }
+.program-title-band .intro { max-width: 52ch; }
+.program-at-a-glance { display: flex; gap: 3rem; margin: 0; padding-bottom: .5rem; }
+.program-at-a-glance dt { font-size: 3.5rem; line-height: 1.1; color: var(--green-ink); }
+.program-at-a-glance dd { margin: .5rem 0 0; font-size: 1rem; color: var(--navy); }
+.program-chapter { padding-block: 4.5rem; }
+.program-chapter:nth-child(2) { background: #f0f3f7; }
+.chapter-inner { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1fr); gap: 5rem; align-items: center; }
+.chapter-photo { position: relative; }
+.chapter-photo img { width: 100%; height: 390px; object-fit: cover; object-position: center; }
+.chapter-photo figcaption { background: var(--navy); color: white; font-size: 1rem; padding: .8rem 1.2rem; border-left: 5px solid var(--green); }
+.program-chapter:nth-child(2) .chapter-photo { grid-column: 2; grid-row: 1; }
+.program-chapter:nth-child(2) .chapter-copy { grid-column: 1; grid-row: 1; }
+.program-chapter:nth-child(2) .chapter-photo img { object-position: 55% center; }
+.chapter-number { font-size: .9375rem; letter-spacing: .08em; color: var(--green-ink); margin-bottom: 1rem; font-weight: 600; }
+.chapter-copy h2 { font-size: clamp(1.875rem,2.8vw,2.5rem); margin-bottom: 1.5rem; }
+.chapter-copy p:not(.chapter-number) { max-width: 57ch; }
+.program-expectations { background: var(--navy); color: white; padding-block: 3.5rem; }
+.expectations-inner { display: grid; grid-template-columns: 1fr 1.4fr; gap: 5rem; }
+.program-expectations h2, .program-expectations .overline { color: white; }
+.team-title-band { padding-block: 3.5rem 4rem; background: var(--navy); color: white; border-bottom: 7px solid var(--green); }
+.team-title-band h1 { color: white; }
+.team-title-band .overline { color: #c5d8c1; }
+.team-title-band .intro { max-width: 55ch; }
+.people-editorial { background: #f1f4f1; }
+.team-showcase { padding-block: 3rem 4.5rem; }
+.team-showcase-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 2rem; margin-bottom: 2rem; }
+.team-showcase-heading p { color: var(--muted); }
+.team-profile-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 2rem; }
+.team-profile { background: white; border-bottom: 4px solid var(--green); min-width: 0; }
+.team-profile .person-portrait { width: 100%; aspect-ratio: 1; grid-row: auto; }
+.team-profile-content { padding: 1.5rem; }
+.team-profile .class-year { font-size: 1rem; }
+.profile-title { display: flex; align-items: start; justify-content: space-between; gap: .4rem; }
+.profile-title h3 { font-size: 1.7rem; }
+.profile-title .linkedin-link { margin: -.3rem -.5rem 0 0; flex-shrink: 0; }
+.profile-position { color: var(--green-ink); font-size: 1rem; margin-top: .5rem; }
+.profile-destination { color: var(--navy); font-size: 1rem; font-weight: 600; margin-block: 1.1rem; padding-block: .8rem; border-block: 1px solid var(--line); }
+.profile-bio { font-size: 1.0625rem; line-height: 1.7; }
+@media (max-width: 1000px) {
+ .chapter-inner, .expectations-inner, .program-title-grid { gap: 2.5rem; }
+ .chapter-photo img { height: 360px; }
+ .team-profile-grid { gap: 1.25rem; }
+ .team-profile-content { padding: 1.15rem; }
+ .profile-title h3 { font-size: 1.5rem; }
+}
+@media (max-width: 760px) {
+ .program-title-grid, .chapter-inner, .expectations-inner { grid-template-columns: 1fr; }
+ .program-chapter:nth-child(2) .chapter-photo, .program-chapter:nth-child(2) .chapter-copy { grid-column: auto; grid-row: auto; }
+ .program-chapter { padding-block: 2.5rem; }
+ .chapter-photo img { height: 300px; }
+ .program-title-band, .team-title-band { padding-block: 2.5rem; }
+ .team-showcase-heading { display: block; }
+ .team-showcase-heading p { margin-top: .75rem; }
+ .team-profile-grid { grid-template-columns: 1fr; gap: 2rem; max-width: 440px; margin-inline: auto; }
+ .team-profile-content { padding: 1.5rem; }
+ .profile-title h3 { font-size: 1.75rem; }
+ .profile-bio { font-size: 1.125rem; }
+}
