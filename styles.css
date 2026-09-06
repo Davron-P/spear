@@ -1,15 +1,14 @@
 /* Shared colors and type: restrained institutional styling across all pages. */
 :root {
-  --navy: #18385f;
-  --green: #9eb28f;
+  --navy: #1d3155;
+  --green: #80a27b;
   --green-ink: #405c3d;
   --text: #333c43;
   --muted: #59626a;
   --line: #dce0e2;
   --white: #ffffff;
   --surface: #f6f7f7;
-  --serif: Georgia, "Times New Roman", serif;
-  --sans: Arial, Helvetica, sans-serif;
+  --sans: Calibri, Arial, Helvetica, sans-serif;
 }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 7rem; }
@@ -18,7 +17,7 @@ a { color: var(--navy); text-underline-offset: .25em; }
 a:hover { color: var(--green-ink); }
 a:focus-visible { outline: 2px solid var(--green-ink); outline-offset: 5px; }
 h1, h2, h3, p, figure { margin: 0; }
-h1, h2, h3 { font-family: var(--serif); font-weight: 400; color: var(--navy); line-height: 1.2; }
+h1, h2, h3 { font-family: var(--sans); font-weight: 700; color: var(--navy); line-height: 1.2; }
 h1 { font-size: clamp(2.25rem, 4vw, 3.5rem); }
 h2 { font-size: clamp(1.6rem, 2.3vw, 2rem); }
 h3 { font-size: 1.25rem; }
@@ -34,15 +33,10 @@ img { max-width: 100%; display: block; }
 .nav-links a[aria-current="page"] { font-weight: 700; }
 .skip-link { position: fixed; top: -10rem; left: 1rem; padding: .75rem 1rem; background: var(--white); z-index: 20; }
 .skip-link:focus { top: 1rem; }
-.home-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); gap: 4rem; align-items: center; padding-block: 4rem; }
 .overline { font-size: .8rem; letter-spacing: .13em; text-transform: uppercase; color: var(--green-ink); margin-bottom: 1rem; }
 .intro { font-size: 1.125rem; line-height: 1.7; margin-top: 1.4rem; max-width: 62ch; }
-.home-copy > p:not(.overline) { margin-top: 1.25rem; }
 .button { display: inline-block; margin-top: 1.6rem; padding: .65rem 1.5rem; background: var(--navy); color: var(--white); font-size: .875rem; text-decoration: none; border: 1px solid var(--navy); }
 .button:hover { color: var(--white); background: var(--green-ink); border-color: var(--green-ink); }
-.campus-photo img { width: 100%; height: auto; aspect-ratio: 1.15; object-fit: cover; object-position: center; }
-.campus-photo figcaption { color: var(--muted); font-size: .75rem; line-height: 1.6; margin-top: .6rem; }
-.campus-photo figcaption a { color: inherit; }
 .section { padding-block: 3.5rem; }
 .section h2 { margin-bottom: 1.25rem; }
 .overview { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 5rem; border-top: 1px solid var(--line); }
@@ -55,7 +49,7 @@ img { max-width: 100%; display: block; }
 .placement-section { background: var(--surface); border-block: 1px solid var(--line); }
 .placement-description { color: var(--muted); }
 .firm-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 3rem; list-style: none; padding: 0; margin: 2rem 0 0; }
-.firm-list li { font: 1.2rem/1.5 var(--serif); color: var(--navy); padding-block: 1.1rem; border-bottom: 1px solid var(--line); }
+.firm-list li { font: 1.2rem/1.5 var(--sans); color: var(--navy); padding-block: 1.1rem; border-bottom: 1px solid var(--line); }
 .recruitment-summary p { max-width: 65ch; }
 .page-heading { padding-block: 3.5rem 2.8rem; border-bottom: 1px solid var(--line); }
 .page-content { padding-block: .5rem 3rem; }
@@ -68,7 +62,7 @@ img { max-width: 100%; display: block; }
 .availability { color: var(--muted); }
 .site-footer { background: var(--white); border-top: 3px solid var(--navy); padding-block: 2rem; }
 .footer-inner { display: flex; justify-content: space-between; gap: 2rem; }
-.footer-title { font-family: var(--serif); color: var(--navy); font-size: 1.1rem; }
+.footer-title { font-family: var(--sans); color: var(--navy); font-size: 1.1rem; }
 .site-footer p:not(.footer-title) { font-size: .8rem; color: var(--muted); margin-top: .4rem; }
 .site-footer nav { display: flex; gap: .5rem 1.25rem; flex-wrap: wrap; align-content: start; }
 .site-footer nav a { font-size: .875rem; }
@@ -76,7 +70,6 @@ img { max-width: 100%; display: block; }
   .header-inner { flex-direction: column; gap: .5rem; }
   .logo { width: 165px; }
   .nav-links { justify-content: center; gap: .25rem 1.5rem; }
-  .home-intro { gap: 2rem; }
   .overview { gap: 2.5rem; }
   .text-section { gap: 2rem; grid-template-columns: minmax(0, 1fr) minmax(0, 1.8fr); }
   .footer-inner { flex-direction: column; }
@@ -86,11 +79,8 @@ img { max-width: 100%; display: block; }
   .site-header { position: relative; }
   html { scroll-padding-top: 1rem; }
   .wrap { width: 88%; }
-  .home-intro, .overview, .text-section { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
-  .home-intro { padding-block: 2.5rem; }
-  .campus-photo { margin-top: .75rem; }
-  .campus-photo img { aspect-ratio: 1.6; }
-  .section { padding-block: 2.5rem; }
+  .overview, .text-section { grid-template-columns: minmax(0, 1fr); gap: 1.5rem; }
+      .section { padding-block: 2.5rem; }
   .page-heading { padding-block: 2.5rem 2rem; }
   .text-section { padding-block: 2rem; }
   .firm-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.5rem; }
@@ -98,3 +88,22 @@ img { max-width: 100%; display: block; }
   .topic-list { columns: 1; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* SPEAR wordmark stays an image so its original lettering is preserved. */
+.home-hero { position: relative; isolation: isolate; overflow: hidden; background: var(--surface); min-height: 530px; display: flex; align-items: center; }
+.hero-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 53%; z-index: -2; }
+.hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.94) 35%, rgba(255,255,255,.64) 63%, rgba(29,49,85,.2) 100%); z-index: -1; }
+.hero-content { padding-block: 4rem; }
+.hero-brand { max-width: 400px; mix-blend-mode: multiply; }
+.hero-brand img { width: 100%; height: auto; }
+.hero-purpose { color: var(--navy); font-weight: 700; font-size: 1.2rem; margin-top: 1.8rem; }
+.hero-description { max-width: 49ch; margin-top: 1rem; font-size: 1.125rem; color: var(--text); }
+.photo-credit { padding-block: .5rem; text-align: right; font-size: .75rem; color: var(--muted); }
+.photo-credit a { color: inherit; }
+@media (max-width: 640px) {
+  .home-hero { min-height: 470px; }
+  .hero-content { padding-block: 3rem; }
+  .hero-brand { max-width: 320px; }
+  .hero-shade { background: rgba(255,255,255,.92); }
+  .hero-description { max-width: 100%; }
+}

@@ -10,9 +10,9 @@ Static website for SPEAR Investment Banking at Babson College.
 - people.html: student leadership and mentorship.
 - apply.html: application information and availability.
 
-Navigation uses relative file URLs, so pages work with direct file previews and under a repository subdirectory. Placements always links to index.html#placements; there is no placements page.
+Navigation uses relative file URLs, so pages work with direct file previews and under a repository subdirectory. Placements appears only as a section on index.html, not in the header or footer navigation; there is no placements page.
 All pages share styles.css. Navigation and footer markup are static: keep them synchronized when adding links. Each page marks its current navigation link with aria-current.
-Colors are defined once in the stylesheet: navy for headings and actions, green for restrained accents, and white/light gray for surfaces. Georgia and Arial use local system fonts; no font service is required.
+Colors are defined once in the stylesheet: navy for headings and actions, green for restrained accents, and white/light gray for surfaces. Calibri and Arial use local system fonts; no font service is required. The SPEAR wordmark remains the original logo image rather than recreated text.
 
 ## Preview
 
