@@ -182,3 +182,82 @@ img { max-width: 100%; display: block; }
 /* Optical centering: long descenders make these wordmarks appear above center. */
 .logo-group img[src*="jpmorgan"] { --logo-offset-y: 4px; }
 .logo-group img[src*="morgan-stanley"] { --logo-offset-y: 2px; }
+
+/* Interior pages: individual compositions, shared typography and palette. */
+.about-opening { padding-block: 4rem 2.5rem; }
+.about-opening h1 { max-width: 22ch; }
+.about-photo img { width: 100%; height: clamp(260px, 34vw, 440px); object-fit: cover; object-position: center 43%; }
+.about-story { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; }
+.about-principles { padding-block: 3.5rem; background: var(--surface); }
+.principle-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 3rem; }
+.principle-grid article { border-top: 2px solid var(--green); padding-top: 1.5rem; }
+.principle-grid h2 { font-size: 1.65rem; margin-bottom: 1rem; }
+.program-opening { background: var(--navy); padding-block: 3.5rem; color: var(--white); }
+.program-opening h1, .program-opening .overline { color: var(--white); }
+.program-opening h1 { font-size: clamp(2.25rem,3.6vw,3.25rem); }
+.program-opening-grid { display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 3rem; }
+.program-opening figure { align-self: stretch; min-height: 380px; }
+.program-opening img { width: 100%; height: 100%; object-fit: cover; object-position: 42% center; }
+.course-stats { display: flex; gap: 3rem; margin: 2rem 0 0; }
+.course-stats dt { font-size: 2.75rem; line-height: 1.2; }
+.course-stats dd { margin: .25rem 0 0; font-size: 1rem; }
+.curriculum-layout { display: grid; grid-template-columns: .9fr 1.4fr; gap: 4rem; }
+.curriculum-intro p:last-child { margin-top: 1.5rem; max-width: 28ch; }
+.curriculum-list details { border-bottom: 1px solid var(--line); }
+.curriculum-list details:first-child { border-top: 1px solid var(--line); }
+.curriculum-list summary { cursor: pointer; padding: 1.4rem 0; font-size: 1.4rem; font-weight: 600; color: var(--navy); }
+.curriculum-list summary span { font-size: 1rem; color: var(--green-ink); margin-inline: .35rem .7rem; }
+.curriculum-list details > div { padding: 0 0 1.5rem 1.7rem; }
+.curriculum-list ul { padding-left: 1.25rem; margin-bottom: 0; }
+.curriculum-list summary:focus-visible { outline: 2px solid var(--green-ink); outline-offset: 4px; }
+.session-band { background: var(--surface); padding-block: 3rem; }
+.session-band ol { display: grid; grid-template-columns: repeat(4,1fr); gap: 2rem; margin: 2rem 0 0; padding-left: 1.4rem; }
+.session-band li { padding-left: .35rem; }
+.people-opening { display: flex; align-items: flex-end; justify-content: space-between; gap: 3rem; padding-block: 4rem 3rem; }
+.people-opening .intro { max-width: 34ch; margin: 0 0 .3rem; }
+.people-banner { height: 240px; overflow: hidden; }
+.people-banner img { width: 100%; height: 100%; object-fit: cover; object-position: center 37%; }
+.directory-heading { display: flex; justify-content: space-between; gap: 3rem; align-items: baseline; margin-bottom: 2rem; }
+.directory-heading p { max-width: 33ch; color: var(--muted); }
+.directory-person { display: grid; grid-template-columns: 1fr 1.55fr; gap: 4rem; border-top: 1px solid var(--line); padding-block: 2.5rem; }
+.directory-person:first-of-type { border-top: 3px solid var(--green); }
+.person-name h3 { font-size: 1.85rem; }
+.person-name .role { color: var(--green-ink); font-size: 1rem; margin-top: .5rem; }
+.person-story { max-width: 62ch; }
+.apply-layout { display: grid; grid-template-columns: .85fr 1.2fr; gap: 5rem; padding-block: 4rem; align-items: start; }
+.apply-visual { background: var(--navy); color: var(--white); }
+.apply-visual img { width: 100%; height: 270px; object-fit: cover; object-position: 40% center; }
+.apply-visual > div { padding: 2.5rem; }
+.apply-visual h2, .apply-visual .overline { color: var(--white); }
+.apply-visual h2 { font-size: 2.4rem; margin-bottom: 1.5rem; }
+.application-status { background: var(--surface); border-left: 3px solid var(--green); padding: 2rem; margin-block: 2rem; }
+.status-label { font-size: 1rem; color: var(--green-ink); margin-bottom: .75rem; }
+.application-status h2 { font-size: 1.8rem; margin-bottom: 1rem; }
+.application-prepare h2 { font-size: 1.65rem; margin-bottom: 1rem; }
+.application-link { display: flex; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--line); text-decoration: none; padding-block: 1rem; }
+.application-link:first-of-type { margin-top: .75rem; }
+@media (max-width: 900px) {
+ .about-story, .curriculum-layout, .apply-layout { gap: 2.5rem; }
+ .program-opening-grid { grid-template-columns: 1fr; }
+ .program-opening figure { min-height: 0; height: 320px; }
+ .people-opening, .directory-heading { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
+ .people-opening .intro, .directory-heading p { max-width: 55ch; }
+ .principle-grid { gap: 1.5rem; }
+ .directory-person { gap: 2rem; grid-template-columns: 1fr 1.4fr; }
+ .apply-layout { grid-template-columns: .8fr 1.2fr; }
+ .apply-visual > div { padding: 1.5rem; }
+}
+@media (max-width: 640px) {
+ .about-opening, .people-opening { padding-block: 2.5rem 2rem; }
+ .about-story, .principle-grid, .curriculum-layout, .directory-person, .apply-layout { grid-template-columns: 1fr; }
+ .about-story, .directory-person { gap: 1.5rem; }
+ .program-opening { padding-block: 2.5rem; }
+ .program-opening figure { height: 250px; }
+ .session-band ol { grid-template-columns: 1fr 1fr; }
+ .people-banner { height: 200px; }
+ .apply-layout { padding-block: 2.5rem; }
+ .apply-content { grid-row: 1; }
+ .apply-visual img { height: 200px; }
+ .application-status { padding: 1.5rem; }
+ .curriculum-list summary { font-size: 1.25rem; }
+}
