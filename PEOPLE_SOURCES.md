@@ -24,4 +24,4 @@ https://www.linkedin.com/in/siya-kohli publicly reproduces the Fall 2026 facilit
 
 The SPEAR site owner supplied these details: Isabella is a senior, leads BCF Healthcare, and has a Piper Sandler return offer; Tancrede is a senior with a PJT Partners return offer; Sam is a junior with an upcoming Cantor summer analyst internship. Incorporated without presenting these as independently verified LinkedIn claims.
 
-LinkedIn profile photographs remain pending: all three profile URLs redirected to a sign-in wall in the available browser. No substitute or generated portraits were added. Removed Babson profile links at the owner's request.
+Portraits supplied directly by the site owner as isabella.jfif, tancrede.jfif, and sam.jfif. Original JPEG bytes are stored in images/people/ with .jpg extensions. Tancrede's portrait uses a small CSS crop to hide the arrows at the image edges. Removed Babson profile links at the owner's request.
