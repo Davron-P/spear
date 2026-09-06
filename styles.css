@@ -118,21 +118,30 @@ img { max-width: 100%; display: block; }
 }
 
 /* One continuous row; without JS or motion, the same logos scroll manually. */
-.logo-carousel { margin-top: 1.5rem; }
-.logo-controls { display: flex; justify-content: flex-end; margin-bottom: .5rem; }
+.logo-carousel { position: relative; margin-top: 1.5rem; }
+.logo-controls { position: absolute; z-index: 2; right: 0; top: -2rem; }
+.logo-toggle:not(:focus-visible) { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .logo-toggle { border: 1px solid var(--line); padding: .4rem .9rem; min-height: 44px; background: var(--white); color: var(--navy); font: 1rem var(--sans); cursor: pointer; }
 .logo-toggle:hover { border-color: var(--navy); }
 .logo-toggle:focus-visible, .logo-viewport:focus-visible { outline: 2px solid var(--green-ink); outline-offset: 4px; }
 .logo-carousel [hidden] { display: none !important; }
-.logo-viewport { overflow-x: auto; background: var(--white); border-block: 1px solid var(--line); }
+.logo-viewport { overflow-x: auto; background: transparent; }
 .logo-track { display: flex; width: max-content; }
 .logo-group { display: flex; align-items: center; flex: 0 0 auto; gap: 2rem; list-style: none; margin: 0; padding: 1.5rem 2rem 1.5rem 0; }
 .logo-group li { width: 190px; height: 84px; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; padding: .5rem; }
-.logo-group img { width: 100%; height: 56px; object-fit: contain; }
-.logo-group .pjt-logo { filter: brightness(0); max-width: 90px; }
+.logo-group img { width: var(--logo-width, 165px); height: var(--logo-height, 50px); object-fit: contain; mix-blend-mode: multiply; }
+.logo-group img[src*="pjt."] { filter: brightness(0); --logo-width: 90px; }
+.logo-group img[src*="william-blair"] { filter: brightness(0); --logo-width: 165px; }
+.logo-group img[src*="wells-fargo"] { filter: brightness(0); }
+.logo-group img[src*="goldman-sachs"] { --logo-width: 92px; --logo-height: 64px; }
+.logo-group img[src*="deutsche-bank"] { --logo-width: 180px; --logo-height: 50px; }
+.logo-group img[src*="rbc."] { --logo-width: 145px; --logo-height: 64px; }
+.logo-group img[src*="stifel"] { --logo-width: 130px; }
+.logo-group img[src*="bmo."] { --logo-width: 130px; }
+.logo-group img[src*="jefferies"] { --logo-width: 140px; }
 .logo-fallback { color: var(--navy); font-weight: 700; text-align: center; }
 .logo-carousel.is-enhanced .logo-viewport { overflow-x: hidden; }
-.logo-carousel.is-enhanced .logo-track { animation: logos-scroll 42s linear infinite; }
+.logo-carousel.is-enhanced .logo-track { animation: logos-scroll 94s linear infinite; }
 .logo-carousel:hover .logo-track,
 .logo-carousel:focus-within .logo-track,
 .logo-carousel[data-paused="true"] .logo-track { animation-play-state: paused; }
@@ -142,3 +151,7 @@ img { max-width: 100%; display: block; }
   .logo-carousel.is-enhanced .logo-viewport { overflow-x: auto; }
   .logo-group[aria-hidden="true"], .logo-controls { display: none; }
 }
+
+.logo-group img[src*="moelis"] { --logo-width: 135px; --logo-height: 40px; }
+.logo-group img[src*="bank-of-america"] { --logo-width: 185px; }
+.logo-group img[src*="goldman-sachs"] { --logo-width: 105px; }

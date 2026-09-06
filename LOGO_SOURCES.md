@@ -11,3 +11,21 @@ Retrieved September 6, 2026. Local copies preserve source artwork. Logos identif
 - William Blair: https://www.williamblair.com/-/media/williamblairwebsite/project/logos/default-william-blair-logo.svg?la=en&hash=608855A3B7F23D6489BCC56EA57A3FEA (images/firms/william-blair.svg)
 - Stifel: https://www.stifel.com/images/home/stifel-logo.svg (images/firms/stifel.svg)
 - Piper Sandler: https://www.pipersandler.com/themes/custom/pipersandler/logo.svg (images/firms/piper-sandler.svg)
+
+## Additional firms requested by SPEAR
+
+- Goldman Sachs: [source](https://cdn.gs.com/images/goldman-sachs/v1/gs-vertical-lg.svg); local file `images/firms/goldman-sachs.svg`.
+- Bank of America: [source](https://cornellfinanceclub.org/wp-content/uploads/2026/07/cropped-Bank-of-America-Logo-scaled-1.png); local file `images/firms/bank-of-america.png`.
+- Deutsche Bank: [source](https://www.db.com/application/project/images/logos/identifier_RETINA.png); local file `images/firms/deutsche-bank.png`.
+- Wells Fargo: [source](https://www17.wellsfargomedia.com/assets/images/rwd/wf_logo_220x23.png); local file `images/firms/wells-fargo.png`.
+- Jefferies: [source](https://www.jefferies.com/wp-content/themes/jefferies-com/dist/images/jefferies.svg); local file `images/firms/jefferies.svg`.
+- RBC Capital Markets: [source](https://upload.wikimedia.org/wikipedia/commons/1/1c/RBC_Capital_Markets_Logo.svg); local file `images/firms/rbc.svg`.
+- Rothschild & Co: [source](https://www.rothschildandco.com/siteassets/images/RothschildCo_Logo.png); local file `images/firms/rothschild.png`.
+- Guggenheim Partners: [source](https://www.guggenheimpartners.com/guggenheimpartners/content/images/Guggenheim_Logo.svg); local file `images/firms/guggenheim.svg`.
+- BMO: [source](https://companieslogo.com/img/orig/BMO_BIG-bc70abb2.png?t=1742992311); local file `images/firms/bmo.png`.
+- Raymond James: [source](https://companieslogo.com/img/orig/RJF_BIG-266338ed.png?t=1720244493); local file `images/firms/raymond-james.png`.
+- Cantor Fitzgerald: [source](https://upload.wikimedia.org/wikipedia/commons/f/f7/Cantor_Fitzgerald_logo.png); local file `images/firms/cantor.png`.
+
+RBC Capital Markets logo: RBC Capital Markets, via Wikimedia Commons, listed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Original artwork unchanged; display size adjusted with CSS.
+
+Logos share a transparent section background, with individual optical sizing. White wordmarks use a dark CSS filter. Motion pauses on hover and keyboard focus; the pause control appears only on keyboard focus. Reduced-motion preferences disable animation.
