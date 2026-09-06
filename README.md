@@ -12,7 +12,7 @@ Static website for SPEAR Investment Banking at Babson College.
 
 Navigation uses relative file URLs, so pages work with direct file previews and under a repository subdirectory. Placements always links to index.html#placements; there is no placements page.
 All pages share styles.css. Navigation and footer markup are static: keep them synchronized when adding links. Each page marks its current navigation link with aria-current.
-Colors are defined once in the stylesheet: navy for structure and actions, sage green for accents, darker green for readable text, and white/paper backgrounds.
+Colors are defined once in the stylesheet: navy for headings and actions, green for restrained accents, and white/light gray for surfaces. Georgia and Arial use local system fonts; no font service is required.
 
 ## Preview
 
@@ -32,3 +32,9 @@ Application and facilitator pages currently explain that details are unavailable
 - Confirm every navigation link reaches its section and every external link reaches the intended destination.
 - Check desktop and mobile layouts, including narrow screens and keyboard navigation.
 - Keep navy text on the green application background and use readable contrast for small labels.
+
+## Design references and photography
+
+See DESIGN_NOTES.md for the September 2026 reference review and the decisions applied to the site.
+
+The homepage uses a remote public-domain photograph of Reynolds Campus Center at Babson College, taken by Daderot on August 1, 2010. It is a campus photograph, not a SPEAR event photograph. Source: https://commons.wikimedia.org/wiki/File:Reynolds_Campus_Center,_Babson_College_-_IMG_0420.JPG. The image depends on Wikimedia availability; retain its attribution when replacing it with a local copy or use an approved current club/campus photo.
