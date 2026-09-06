@@ -261,3 +261,8 @@ img { max-width: 100%; display: block; }
  .application-status { padding: 1.5rem; }
  .curriculum-list summary { font-size: 1.25rem; }
 }
+
+.linkedin-link { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; margin-top: .75rem; color: #0a66c2; }
+.linkedin-link svg { width: 28px; height: 28px; }
+.linkedin-link:hover { color: var(--navy); }
+.people-page .team-directory { padding-top: 1rem; }

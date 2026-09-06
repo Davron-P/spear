@@ -19,3 +19,9 @@ Reviewed September 6, 2026. User identified Isabella Wellington, Tancrede Roy, a
 ## Cohort context
 
 https://www.linkedin.com/in/siya-kohli publicly reproduces the Fall 2026 facilitator announcement naming all three. This corroborates the user's supplied facilitator list. No employment timing or bank role is inferred from profile headline affiliations.
+
+## User-provided updates
+
+The SPEAR site owner supplied these details: Isabella is a senior, leads BCF Healthcare, and has a Piper Sandler return offer; Tancrede is a senior with a PJT Partners return offer; Sam is a junior with an upcoming Cantor summer analyst internship. Incorporated without presenting these as independently verified LinkedIn claims.
+
+LinkedIn profile photographs remain pending: all three profile URLs redirected to a sign-in wall in the available browser. No substitute or generated portraits were added. Removed Babson profile links at the owner's request.
