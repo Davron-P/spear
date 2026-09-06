@@ -362,7 +362,7 @@ a {
 .stats {
     display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
 
     background-color: var(--navy);
 
@@ -439,7 +439,7 @@ a {
 
     font-family: "Oswald", sans-serif;
 
-    color: var(--green);
+    color: var(--navy);
 
     font-size: 17px;
 }
@@ -932,7 +932,7 @@ footer {
     }
 
 
-    .nav-links {
+    .nav-links a {
         font-size: 12px;
     }
 
@@ -978,4 +978,22 @@ footer {
         padding: 90px 6%;
     }
 
+}
+
+/* Clear status text while application and facilitator details are unavailable. */
+.apply-section .light-label {
+    color: var(--navy);
+}
+
+.apply-section .application-status {
+    padding: 20px 0;
+    border-top: 1px solid currentColor;
+    font-weight: 600;
+}
+
+.people-intro {
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.7;
+    color: var(--gray);
 }
