@@ -117,7 +117,7 @@ img { max-width: 100%; display: block; }
   .hero-description { max-width: 100%; font-size: 1rem; }
 }
 
-/* One continuous row; without JS or motion, the same logos scroll manually. */
+/* Two continuous rows with feathered edges and a static reduced-motion layout. */
 .logo-carousel { position: relative; margin-top: 1.5rem; }
 .logo-controls { position: absolute; z-index: 2; right: 0; top: -2rem; }
 .logo-toggle:not(:focus-visible) { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
@@ -125,14 +125,21 @@ img { max-width: 100%; display: block; }
 .logo-toggle:hover { border-color: var(--navy); }
 .logo-toggle:focus-visible, .logo-viewport:focus-visible { outline: 2px solid var(--green-ink); outline-offset: 4px; }
 .logo-carousel [hidden] { display: none !important; }
-.logo-viewport { overflow-x: auto; background: transparent; }
+.logo-viewport { background: transparent; }
+.logo-row { overflow-x: auto; }
+.logo-carousel.is-enhanced .logo-row {
+  overflow: hidden;
+  mask-image: linear-gradient(to right, transparent, #000 72px, #000 calc(100% - 72px), transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 72px, #000 calc(100% - 72px), transparent);
+}
+.logo-row + .logo-row { margin-top: .5rem; }
 .logo-track { display: flex; width: max-content; }
-.logo-group { display: flex; align-items: center; flex: 0 0 auto; gap: 2rem; list-style: none; margin: 0; padding: 1.5rem 2rem 1.5rem 0; }
+.logo-group { display: flex; align-items: center; flex: 0 0 auto; gap: 2rem; list-style: none; margin: 0; padding: .75rem 2rem .75rem 0; }
 .logo-group li { width: 190px; height: 84px; flex: 0 0 auto; display: flex; align-items: center; justify-content: center; padding: .5rem; }
 .logo-group img { width: var(--logo-width, 165px); height: var(--logo-height, 50px); object-fit: contain; mix-blend-mode: multiply; }
 .logo-group img[src*="pjt."] { filter: brightness(0); --logo-width: 90px; }
 .logo-group img[src*="william-blair"] { filter: brightness(0); --logo-width: 165px; }
-.logo-group img[src*="wells-fargo"] { filter: brightness(0); }
+.logo-group img[src*="wells-fargo"] { --logo-width: 68px; --logo-height: 68px; mix-blend-mode: normal; }
 .logo-group img[src*="goldman-sachs"] { --logo-width: 92px; --logo-height: 64px; }
 .logo-group img[src*="deutsche-bank"] { --logo-width: 180px; --logo-height: 50px; }
 .logo-group img[src*="rbc."] { --logo-width: 145px; --logo-height: 64px; }
@@ -141,17 +148,24 @@ img { max-width: 100%; display: block; }
 .logo-group img[src*="jefferies"] { --logo-width: 140px; }
 .logo-fallback { color: var(--navy); font-weight: 700; text-align: center; }
 .logo-carousel.is-enhanced .logo-viewport { overflow-x: hidden; }
-.logo-carousel.is-enhanced .logo-track { animation: logos-scroll 94s linear infinite; }
+.logo-carousel.is-enhanced .logo-track { animation: logos-scroll 55s linear infinite; }
+.logo-carousel.is-enhanced .logo-row:nth-child(2) .logo-track { animation-direction: reverse; }
 .logo-carousel:hover .logo-track,
 .logo-carousel:focus-within .logo-track,
 .logo-carousel[data-paused="true"] .logo-track { animation-play-state: paused; }
 @keyframes logos-scroll { to { transform: translateX(-50%); } }
 @media (prefers-reduced-motion: reduce) {
   .logo-carousel.is-enhanced .logo-track { animation: none; transform: none; }
-  .logo-carousel.is-enhanced .logo-viewport { overflow-x: auto; }
+  .logo-carousel.is-enhanced .logo-row { overflow: visible; mask-image: none; -webkit-mask-image: none; }
+  .logo-track { width: 100%; }
+  .logo-group { width: 100%; flex-wrap: wrap; justify-content: center; gap: 1rem; padding: 1rem 0; }
   .logo-group[aria-hidden="true"], .logo-controls { display: none; }
 }
 
 .logo-group img[src*="moelis"] { --logo-width: 135px; --logo-height: 40px; }
 .logo-group img[src*="bank-of-america"] { --logo-width: 185px; }
 .logo-group img[src*="goldman-sachs"] { --logo-width: 105px; }
+
+.logo-group img[src*="Cantor_logo"] { --logo-width: 130px; }
+@media (max-width: 640px) { .logo-carousel.is-enhanced .logo-row { mask-image: linear-gradient(to right, transparent, #000 32px, #000 calc(100% - 32px), transparent); -webkit-mask-image: linear-gradient(to right, transparent, #000 32px, #000 calc(100% - 32px), transparent); } }
+@media (max-width: 640px) and (prefers-reduced-motion: reduce) { .logo-carousel.is-enhanced .logo-row { mask-image: none; -webkit-mask-image: none; } }

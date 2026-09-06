@@ -3,16 +3,17 @@
   const carousel = document.querySelector("[data-logo-carousel]");
   if (!carousel) return;
 
-  const track = carousel.querySelector(".logo-track");
-  const group = carousel.querySelector(".logo-group");
   const toggle = carousel.querySelector(".logo-toggle");
-  if (!track || !group || !toggle) return;
-
-  const duplicate = group.cloneNode(true);
-  duplicate.setAttribute("aria-hidden", "true");
-  duplicate.removeAttribute("aria-label");
-  duplicate.querySelectorAll("img").forEach(image => image.alt = "");
-  track.append(duplicate);
+  if (!toggle) return;
+  carousel.querySelectorAll(".logo-track").forEach(track => {
+    const group = track.querySelector(".logo-group");
+    if (!group) return;
+    const duplicate = group.cloneNode(true);
+    duplicate.setAttribute("aria-hidden", "true");
+    duplicate.removeAttribute("aria-label");
+    duplicate.querySelectorAll("img").forEach(image => image.alt = "");
+    track.append(duplicate);
+  });
 
   carousel.querySelectorAll("img").forEach(image => {
     const showFallback = () => {
