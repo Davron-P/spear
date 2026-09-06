@@ -38,3 +38,7 @@ The application page currently explains that details are unavailable. Replace th
 See DESIGN_NOTES.md for the university-club reference review and SPEAR brand decisions.
 
 The homepage uses the supplied image at images/cutler-center.png, stored with the site. The image has no visible caption or attribution. People-page sources and verification dates are recorded in PEOPLE_SOURCES.md.
+
+## Placement logo row
+
+The homepage's nine local firm logos move continuously in one row. Pause with the button, hover, or keyboard focus. Reduced-motion preferences disable animation and leave a manually scrollable row. Without JavaScript the original row remains scrollable. Sources are recorded in LOGO_SOURCES.md.
