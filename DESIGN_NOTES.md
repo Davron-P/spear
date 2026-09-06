@@ -27,3 +27,7 @@ The Fall 2024 Session 1 Participant Agenda and Session 3 deck supersede the peer
 The Cutler Center finance lab is a wide, subdued background behind the homepage introduction, with a readable light overlay and no caption or image attribution. Placements is omitted from both global navigation menus and remains a homepage section.
 
 The program and About pages summarize learning methods and principles from Fall 2024, explicitly labeled with that historical context. Do not infer current facilitators or current application information from the historical documents. The stated 100% internship figure in the deck is a goal, not a verified result. Source documents and participant-level details are not uploaded to the website.
+
+## Latest homepage and People update
+
+Use the user-supplied Cutler image as a local asset with a vertical dark overlay; remove the repeated hero wordmark. The original logo remains in the header. The People page now has sourced Fall 2026 facilitator bios and profile links; see PEOPLE_SOURCES.md. These decisions supersede earlier unavailable-state and white-overlay descriptions.

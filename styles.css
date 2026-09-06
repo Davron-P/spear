@@ -89,19 +89,34 @@ img { max-width: 100%; display: block; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-/* SPEAR wordmark stays an image so its original lettering is preserved. */
-.home-hero { position: relative; isolation: isolate; overflow: hidden; background: var(--surface); min-height: 530px; display: flex; align-items: center; }
-.hero-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 53%; z-index: -2; }
-.hero-shade { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.94) 35%, rgba(255,255,255,.64) 63%, rgba(29,49,85,.2) 100%); z-index: -1; }
-.hero-content { padding-block: 4rem; }
-.hero-brand { max-width: 400px; mix-blend-mode: multiply; }
-.hero-brand img { width: 100%; height: auto; }
-.hero-purpose { color: var(--navy); font-weight: 700; font-size: 1.2rem; margin-top: 1.8rem; }
-.hero-description { max-width: 49ch; margin-top: 1rem; font-size: 1.125rem; color: var(--text); }
+/* The supplied Cutler photo fills the hero; shading is vertical, not a white fade. */
+.home-hero { position: relative; isolation: isolate; overflow: hidden; background: var(--navy); min-height: clamp(540px, 48vw, 650px); display: flex; align-items: flex-end; }
+.hero-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; z-index: -2; }
+.hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,24,39,.08) 20%, rgba(12,24,39,.38) 48%, rgba(12,24,39,.9) 100%); z-index: -1; }
+.hero-content { padding-block: 3rem; color: var(--white); }
+.hero-content .overline { color: var(--white); margin-bottom: .7rem; }
+.hero-content h1 { color: var(--white); font-size: clamp(2rem, 3.6vw, 3rem); max-width: 24ch; }
+.hero-description { max-width: 58ch; margin-top: 1rem; font-size: 1.125rem; color: var(--white); }
+.hero-content .button { border-color: var(--white); background: var(--white); color: var(--navy); }
+.hero-content .button:hover { background: var(--green); border-color: var(--green); }
+.hero-content a:focus-visible { outline-color: var(--white); }
+.team-heading { margin-bottom: 2.5rem; }
+.team-heading p { color: var(--muted); margin-top: .8rem; }
+.facilitator-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; }
+.facilitator { border-top: 3px solid var(--green); padding-top: 1.5rem; }
+.facilitator h3 { font-size: 1.55rem; }
+.class-year { color: var(--muted); font-size: .875rem; margin-bottom: .6rem; }
+.facilitator .role { color: var(--green-ink); font-size: .9375rem; font-weight: 700; margin-top: .5rem; }
+.facilitator > p:not(.class-year):not(.role) { margin-top: 1.1rem; }
+.profile-links { display: flex; flex-wrap: wrap; gap: .7rem 1.2rem; margin-top: 1.3rem; font-size: .9375rem; }
+@media (max-width: 760px) {
+  .facilitator-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .facilitator { max-width: 65ch; }
+}
 @media (max-width: 640px) {
-  .home-hero { min-height: 470px; }
-  .hero-content { padding-block: 3rem; }
-  .hero-brand { max-width: 320px; }
-  .hero-shade { background: rgba(255,255,255,.92); }
-  .hero-description { max-width: 100%; }
+  .home-hero { min-height: 570px; }
+  .hero-content { padding-block: 2rem; }
+  .hero-backdrop { object-position: 52% center; }
+  .hero-shade { background: linear-gradient(180deg, rgba(12,24,39,.1) 10%, rgba(12,24,39,.55) 40%, rgba(12,24,39,.94) 100%); }
+  .hero-description { max-width: 100%; font-size: 1rem; }
 }
