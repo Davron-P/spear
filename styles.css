@@ -380,23 +380,42 @@ img { max-width: 100%; display: block; }
 .apply-visual > div { padding-block: 3rem; }
 .application-link { border: 1px solid var(--navy); padding: .8rem 1.25rem; margin-top: 1rem; font-weight: 600; min-height: 48px; }
 .application-link:hover { background: var(--navy); color: white; }
-.program-expectations { width: min(1120px, 88%); margin: 0 auto 4rem; padding: 3.5rem; border-left: 6px solid var(--green); }
-.program-expectations .wrap { width: 100%; }
-.expectations-inner { gap: 3rem; }
-.site-footer { background: #dce6df; border-top: 1px solid #bacdbf; padding-block: 3rem; }
+
+
+
+.site-footer { background: #172126; border-top: 1px solid #465157; padding-block: 3rem; color: white; }
 .footer-inner { display: grid; grid-template-columns: 1.15fr 1fr auto; align-items: start; gap: 3rem; }
-.footer-title { font-size: 1.65rem; font-weight: 700; line-height: 1.25; }
-.site-footer .footer-details p { font-size: 1.125rem; color: #334c40; margin: 0; line-height: 1.55; }
+.footer-title { font-size: 1.65rem; font-weight: 700; line-height: 1.25; color: white; }
+.site-footer .footer-details p { font-size: 1.125rem; color: #d9e0e3; margin: 0; line-height: 1.55; }
 .site-footer .footer-details .footer-location { margin-top: .65rem; font-size: 1rem; }
-.footer-linkedin { width: 48px; height: 48px; justify-content: center; align-self: start; border: 1px solid #94ad9b; }
-.footer-linkedin svg { width: 27px; height: 27px; color: var(--navy); }
-.footer-linkedin:hover { background: var(--navy); border-color: var(--navy); }
+.footer-linkedin { width: 48px; height: 48px; justify-content: center; align-self: start; border: 0; }
+.footer-linkedin svg { width: 32px; height: 32px; color: white; }
+.footer-linkedin:hover { background: transparent; opacity: .75; }
 .footer-linkedin:hover svg { color: white; }
 @media (max-width: 760px) {
- .program-expectations { padding: 2rem; margin-bottom: 2.5rem; }
+
  .footer-inner { grid-template-columns: minmax(0, 1fr) auto; gap: 1.5rem; }
  .footer-details { grid-column: 1; grid-row: 2; }
  .footer-linkedin { grid-column: 2; grid-row: 1; }
  .footer-title { font-size: 1.5rem; }
  .about-opening { padding-block: 2.5rem; }
+}
+
+/* Program graphics describe the work without implying unrelated students are members. */
+.site-footer a:focus-visible { outline-color: white; }
+.mentor-visual { background: #e0e9e3; padding: 2.5rem; color: var(--navy); }
+.visual-kicker { font-size: .9375rem; text-transform: uppercase; letter-spacing: .1em; font-weight: 600; }
+.mentor-member { width: fit-content; margin: 2rem auto 0; padding: .7rem 2rem; background: var(--navy); color: white; font-size: 1.5rem; font-weight: 600; }
+.mentor-connections { position: relative; padding-top: 2rem; }
+.mentor-connections::before { content: ""; position: absolute; width: 1px; height: 2rem; background: #829b8c; top: 0; left: 50%; }
+.mentor-connections > div { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; border-top: 1px solid #a4b9ad; padding-block: .85rem; }
+.mentor-connections strong { font-size: 1.125rem; }
+.mentor-connections span { font-size: 1rem; color: #40584b; text-align: right; }
+.capstone-visual { background: #e8ecf1; padding: 2rem; }
+.capstone-document { background: white; padding: 2rem; border-top: 5px solid var(--navy); box-shadow: 8px 8px 0 #ccd5df; }
+.capstone-document-title { font-size: clamp(2rem, 3vw, 2.75rem); font-weight: 700; color: var(--navy); line-height: 1.15; margin-block: 1.25rem 1.75rem; }
+.capstone-methods p { padding-block: .45rem; border-top: 1px solid var(--line); font-size: 1.0625rem; margin: 0; }
+@media (max-width: 1000px) {
+ .mentor-visual, .capstone-visual { padding: 1.5rem; }
+ .capstone-document { padding: 1.5rem; }
 }
