@@ -419,3 +419,27 @@ img { max-width: 100%; display: block; }
  .mentor-visual, .capstone-visual { padding: 1.5rem; }
  .capstone-document { padding: 1.5rem; }
 }
+
+/* About: founding history, original cohort, and guiding principles. */
+.founding-story { display: grid; grid-template-columns: 1fr 1.15fr; gap: 4rem; align-items: center; padding-block: 4rem; }
+.founding-story h2, .evolving-story h2 { margin-bottom: 1.5rem; }
+.founding-photo img { width: 100%; height: auto; }
+.founding-photo figcaption { font-size: 1rem; color: var(--muted); padding-top: .75rem; }
+.evolving-story { display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; padding-block: 3rem 4rem; border-top: 1px solid var(--line); }
+.history-principles { background: #edf2ee; padding-block: 3.5rem; }
+.history-principle-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem 4rem; margin-top: 2.5rem; }
+.history-principle-grid article { border-top: 2px solid var(--green); padding-top: 1.25rem; }
+.history-principle-grid h3 { margin-bottom: 1rem; }
+.about-joining { display: flex; justify-content: space-between; align-items: center; gap: 4rem; }
+.about-joining > div { max-width: 65ch; }
+.about-joining .button { flex-shrink: 0; margin-top: 0; }
+@media (max-width: 900px) {
+ .founding-story, .evolving-story { gap: 2.5rem; }
+ .about-joining { align-items: flex-start; flex-direction: column; gap: 1.5rem; }
+}
+@media (max-width: 640px) {
+ .founding-story, .evolving-story, .history-principle-grid { grid-template-columns: 1fr; }
+ .founding-story { padding-block: 2.5rem; }
+ .evolving-story { padding-block: 2.5rem; gap: 0; }
+ .history-principles { padding-block: 2.5rem; }
+}
