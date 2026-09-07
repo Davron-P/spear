@@ -360,3 +360,8 @@ img { max-width: 100%; display: block; }
  .profile-title h3 { font-size: 1.75rem; }
  .profile-bio { font-size: 1.125rem; }
 }
+
+.profile-position + .profile-bio { margin-top: 1.25rem; }
+.footer-linkedin { display: inline-flex; align-items: center; gap: .65rem; align-self: flex-start; min-height: 44px; font-size: 1.125rem; text-decoration: none; }
+.footer-linkedin svg { width: 28px; height: 28px; color: #0a66c2; }
+.footer-linkedin:hover span { text-decoration: underline; }
