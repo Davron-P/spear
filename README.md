@@ -1,44 +1,32 @@
-# SPEAR
+# SPEAR Investment Banking
 
 Static website for SPEAR Investment Banking at Babson College.
 
 ## Pages
+- index.html: introduction, program overview, investment banking placements, and recruitment.
+- about.html: program history and eligibility.
+- program.html: curriculum, mentorship, capstone, and commitment.
+- people.html: facilitator profiles.
+- apply.html: application information.
 
-- index.html: homepage, program overview, and placements.
-- about.html: mission and approach.
-- program.html: curriculum and practical experience.
-- people.html: student leadership and mentorship.
-- apply.html: application information and availability.
+## Local preview
+No build step or package installation is required. From the repository directory:
 
-Navigation uses relative file URLs, so pages work with direct file previews and under a repository subdirectory. Placements appears only as a section on index.html, not in the header or footer navigation; there is no placements page.
-All pages share styles.css. Navigation and footer markup are static: keep them synchronized when adding links. Each page marks its current navigation link with aria-current.
-Colors are defined once in the stylesheet: navy for headings and actions, green for restrained accents, and white/light gray for surfaces. Calibri and Arial use local system fonts; no font service is required. The original SPEAR logo appears in the header only.
+```sh
+python -m http.server 8765
+```
 
-## Preview
+Open http://localhost:8765.
 
-Open index.html in a browser. No build step or dependencies are required.
+## Maintenance
+All pages share styles.css. script.js controls the two-row placement carousel. Navigation and footer markup are included in each HTML file and should stay consistent across pages. Relative links support deployment at either a domain root or a repository subdirectory.
 
-## Content needed before launch
+Application dates and the application form are not yet published. Update apply.html when those details are available.
 
-- Official application URL, eligibility, deadline, and application cycle.
-- Approved facilitator headshots, if photos are desired. Current facilitator bios and profile links are already included.
-- Official contact email and organization LinkedIn URL.
-- Confirm the previously displayed 16 Class of 2028 IB placements: whether this counts unique students or offers, whether it covers SPEAR participants or all Babson students, and the as-of date. This metric is omitted from the page pending that context; restore it with a clear label and date once confirmed, and update the stats grid for three items.
+## Reference
+- DESIGN_NOTES.md: typography, colors, layout, and accessibility.
+- LOGO_SOURCES.md: active logo assets and source links.
+- PEOPLE_SOURCES.md: facilitator profile references.
 
-The application page currently explains that details are unavailable. Replace those messages with confirmed content. Add real contact links in the footer; do not use empty fragment links or placeholder email addresses.
-
-## Checks when updating
-
-- Confirm every navigation link reaches its section and every external link reaches the intended destination.
-- Check desktop and mobile layouts, including narrow screens and keyboard navigation.
-- Keep navy text on the green application background and use readable contrast for small labels.
-
-## Design references
-
-See DESIGN_NOTES.md for the university-club reference review and SPEAR brand decisions.
-
-The homepage uses the supplied image at images/cutler-center.png, stored with the site. The image has no visible caption or attribution. People-page sources and verification dates are recorded in PEOPLE_SOURCES.md.
-
-## Placement logo row
-
-The homepage's nine local firm logos move continuously in one row. Pause with the button, hover, or keyboard focus. Reduced-motion preferences disable animation and leave a manually scrollable row. Without JavaScript the original row remains scrollable. Sources are recorded in LOGO_SOURCES.md.
+## Checks
+Review navigation, image loading, keyboard focus, and layouts at desktop and mobile widths after changes. Confirm profile information and recruitment dates before each semester.

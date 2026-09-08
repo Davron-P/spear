@@ -85,7 +85,7 @@ img { max-width: 100%; display: block; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
-/* The supplied Cutler photo fills the hero; shading is vertical, not a white fade. */
+/* Homepage photograph and vertical contrast overlay. */
 .home-hero { position: relative; isolation: isolate; overflow: hidden; background: var(--navy); min-height: clamp(540px, 48vw, 650px); display: flex; align-items: flex-end; }
 .hero-backdrop { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 40%; z-index: -2; }
 .hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(12,24,39,.08) 20%, rgba(12,24,39,.38) 48%, rgba(12,24,39,.9) 100%); z-index: -1; }
@@ -267,7 +267,7 @@ img { max-width: 100%; display: block; }
 .linkedin-link:hover { color: var(--navy); }
 .people-page .team-directory { padding-top: 1rem; }
 
-/* Facilitator portraits supplied by the site owner. */
+/* Facilitator portrait layout. */
 .people-page .directory-person { grid-template-columns: 180px minmax(0, 1fr) minmax(0, 1.35fr); align-items: center; gap: 2rem; }
 .person-portrait { width: 180px; aspect-ratio: 1; overflow: hidden; background: var(--surface); }
 .person-portrait img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
@@ -452,3 +452,8 @@ img { max-width: 100%; display: block; }
  .about-history-page .evolving-story { grid-template-columns: 1fr; gap: 2rem; padding-block: 2.5rem; }
  .about-history-page .evolving-story > div { grid-row: 1; }
 }
+
+/* Official Moelis wordmark is white; render it dark on the placement surface. */
+.logo-group img[src*="moelis.svg"] { filter: brightness(0); --logo-width: 135px; --logo-height: 40px; }
+.logo-group img[src*="houlihan-lokey"] { --logo-width: 185px; }
+.logo-group img[src*="raymond-james"] { --logo-width: 190px; }
